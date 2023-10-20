@@ -1,9 +1,9 @@
 ## PH Automotive Limited
 #### https://ph-automotive.web.app/
 
-User can see brandwise products
-User can see product details
-User can update product details
-Use can add product in the cart
-User can login and register
+1.User can see brandwise products
+2.User can see product details
+3.User can update product details
+4.Use can add product in the cart
+5.User can login and register
 
