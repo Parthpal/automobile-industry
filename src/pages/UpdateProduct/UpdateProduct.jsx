@@ -102,7 +102,7 @@ const UpdateProduct = () => {
                             </div>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Add Product</button>
+                                <button className="btn btn-primary">Update Product</button>
                             </div>
                         
                         </form>
