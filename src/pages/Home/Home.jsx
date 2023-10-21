@@ -9,21 +9,26 @@ import { useState } from 'react';
 
 const Home = () => {
     const [theme,setTheme]=useState("light");
+    const [mode,setMode]=useState(false);
 
     useEffect(()=> {
         if(theme ==="dark"){
                document.documentElement.classList.add("dark"); 
+            
         }
         else{
             document.documentElement.classList.remove("dark"); 
+                // const text="dark";
         }
+
     },[theme]);
 const handleSwitch=()=>{
     setTheme(theme === "dark"?"light":"dark");
+    setMode(current=>!current)
 }
     return (
         <div className='dark:bg-black'>
-            <Header handleSwitch={handleSwitch}></Header>
+            <Header handleSwitch={handleSwitch} mode={mode}></Header>
             <Banner/>
             <Brands/>
             <Services/>

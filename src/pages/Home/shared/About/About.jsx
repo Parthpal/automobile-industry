@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div>
+        <div >
             <div className='mx-auto mb-10'>
             <figure className="px-10 pt-10">
                     <img src="https://i.ibb.co/bQHNXvP/auto-mobile-logo.png" alt="Shoes" className="rounded-xl mx-auto w-20 h-20" />

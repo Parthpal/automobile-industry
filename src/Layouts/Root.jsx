@@ -4,7 +4,7 @@ import Footer from '../pages/Footer/Footer';
 
 const Root = () => {
     return (
-        <div className='mx-auto container'>
+        <div>
             <Outlet/>
             <Footer/>
         </div>

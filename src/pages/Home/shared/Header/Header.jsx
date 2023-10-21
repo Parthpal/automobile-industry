@@ -2,8 +2,9 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../../provider/AuthProvider/AuthProvider';
+import { BsFillMoonStarsFill,BsFillSunFill } from "react-icons/bs";
 
-const Header = ({handleSwitch}) => {
+const Header = ({handleSwitch,mode}) => {
     const {user,logOut}=useContext(AuthContext);
     const handleLogout=()=>{
       logOut()
@@ -54,7 +55,7 @@ const Header = ({handleSwitch}) => {
         </>:
         <Link to="/login">Login</Link>
       }
-      <button className='btn btn-outline dark:text-white ml-2 px-4 py-1 hidden md:block' onClick={handleSwitch}>Dark Mode</button>
+      <button className='mx-4 hidden md:block' onClick={handleSwitch}>{mode ?<BsFillSunFill></BsFillSunFill> :<BsFillMoonStarsFill></BsFillMoonStarsFill> }</button>
             </div>
         </div>
     );

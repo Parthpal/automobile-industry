@@ -16,7 +16,7 @@ const ProductDetails = () => {
         <Header/>
         <ProductDetailsSlider/>
     
-        <div className='grid lg:grid-cols-4 gap-6 grid-cols-1 md:grid-cols-2 my-16'>
+        <div className='grid lg:grid-cols-3 gap-6 grid-cols-1 md:grid-cols-2 my-16'>
              
              {
                matchedData.length ? matchedData.map(product=><ProductDetail product={product}></ProductDetail>):
